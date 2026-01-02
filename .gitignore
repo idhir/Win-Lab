@@ -2,6 +2,25 @@
 __pycache__/
 *.py[codz]
 *$py.class
+# Ansible
+*.retry
+*.log
+
+# Secrets / vault
+*.vault
+vault*.yml
+group_vars/*/vault.yml
+host_vars/*/vault.yml
+
+# Python cache (si tu utilises venv/ansible-lint)
+__pycache__/
+.venv/
+.env/
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
 
 # C extensions
 *.so
